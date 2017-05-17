@@ -10,20 +10,22 @@
   <body>
   	<header class="row">
   		<div class="col-3">
-        <div class="circle">
-          <br />
-          THINK
-          <br />
-          ABOUT
-          <br />
-          THIS
-        </div>
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="circle">
+            <br />
+            THINK
+            <br />
+            ABOUT
+            <br />
+            THIS
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Offering up thought-provoking quotes since 2017
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
   	</header>
@@ -38,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "Gimme another one", "#", class: 'next-quote' %>
+            <%= link_to "Gimme another one", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             <a href="http://www.thefirehoseproject.com">Nulla dies sine linea.</a>
