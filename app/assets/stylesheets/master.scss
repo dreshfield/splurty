@@ -1,6 +1,35 @@
 @import "bootstrap";
 // @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+h1 {
+  font-family: 'datalegreyagradient', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'datalegreyathin', sans-serif;
+}
+
+h2 span {
+  color: #ADADAD;
+  font-family: 'datalegreyagradient', sans-serif;
+}
+
+header {
+  border-top: 9px solid #222222;
+}
+
+hr {
+  clear: both;
+}
+
 .about {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
@@ -51,13 +80,18 @@
   border-bottom: 1px solid #ADADAD;
   font-family: 'datalegreyathin', sans-serif;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .logo:hover {
   text-decoration: none;
 }
 
-.next-quote {
+.modal {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
+.next-quote, .next-quote:hover {
   color: #F84342;
   font-family: 'datalegreyathin', sans-serif;
   font-size: 20px;
@@ -70,20 +104,6 @@
   padding-top: 26px;
 }
 
-h1 {
-  font-family: 'datalegreyagradient', sans-serif;
-  font-weight: bold;
-  font-size: 48px;
-}
-
-h2 {
-  font-family: 'datalegreyathin', sans-serif;
-}
-
-header {
-  border-top: 9px solid #222222;
-}
-
-hr {
-  clear: both;
+::selection {
+  background-color: #F84342;
 }
